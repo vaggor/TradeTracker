@@ -5,9 +5,7 @@
               <!-- <img src="../../assets/img/img15.png" class="img-fluid" alt=""> -->
               <?php echo $this->Html->image('img/img15.png',array('class'=>'img-fluid')); ?>
             </div>
-            <div class="pos-absolute b-0 l-0 tx-12 tx-center">
-              Workspace design vector is created by <a href="https://www.freepik.com/pikisuperstar" target="_blank">pikisuperstar (freepik.com)</a>
-            </div>
+            
           </div><!-- media-body -->
           <div class="sign-wrapper mg-lg-l-50 mg-xl-l-60">
             <div class="wd-100p">

@@ -297,7 +297,7 @@
           
 
 
-          <div class="col-md-6 col-xl-4 mg-t-10">
+          <!--<div class="col-md-6 col-xl-4 mg-t-10">
             <div class="card ht-100p">
               <div class="card-header d-flex align-items-center justify-content-between">
                 <h6 class="mg-b-0">Transaction History</h6>
@@ -365,10 +365,11 @@
               </ul>
               <div class="card-footer text-center tx-13">
                 <a href="#" class="link-03">View All Transactions <i class="icon ion-md-arrow-down mg-l-5"></i></a>
-              </div><!-- card-footer -->
-            </div><!-- card -->
-          </div>
-          <div class="col-md-6 col-xl-4 mg-t-10">
+              </div>
+            </div>
+          </div>!-->
+
+          <!--<div class="col-md-6 col-xl-4 mg-t-10">
             <div class="card ht-100p">
               <div class="card-header d-flex align-items-center justify-content-between">
                 <h6 class="mg-b-0">New Customers</h6>
@@ -456,10 +457,11 @@
               </ul>
               <div class="card-footer text-center tx-13">
                 <a href="#" class="link-03">View More Customers <i class="icon ion-md-arrow-down mg-l-5"></i></a>
-              </div><!-- card-footer -->
-            </div><!-- card -->
-          </div>
-          <div class="col-md-6 col-xl-4 mg-t-10">
+              </div>
+            </div>
+          </div>!-->
+
+          <!--<div class="col-md-6 col-xl-4 mg-t-10">
             <div class="card ht-lg-100p">
               <div class="card-header d-flex align-items-center justify-content-between">
                 <h6 class="mg-b-0">Real-Time Sales</h6>
@@ -473,7 +475,7 @@
                     <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Yesterday</span>
                   </li>
                 </ul>
-              </div><!-- card-header -->
+              </div>
               <div class="card-body pd-b-0">
                 <div class="row mg-b-20">
                   <div class="col">
@@ -484,13 +486,14 @@
                     <h4 class="tx-normal tx-rubik tx-spacing--1 mg-b-10">$21,880 <small class="tx-11 tx-danger letter-spacing--2"><i class="icon ion-md-arrow-down"></i> 1.04%</small></h4>
                     <p class="tx-11 tx-uppercase tx-spacing-1 tx-medium tx-color-03">Avg. Sales Per Day</p>
                   </div>
-                </div><!-- row -->
+                </div>
                 <div class="chart-five">
                   <div><canvas id="chartBar1"></canvas></div>
                 </div>
-              </div><!-- card-body -->
+              </div>
             </div>
-          </div>
+          </div>!-->
+
         </div><!-- row -->
       </div><!-- container -->
 

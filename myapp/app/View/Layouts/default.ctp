@@ -60,14 +60,14 @@
     <header class="navbar navbar-header navbar-header-fixed">
       <a href="#" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
       <div class="navbar-brand">
-        <a href="http://themepixels.me/demo/dashforge1.1/index.html" class="df-logo">dash<span>forge</span></a>
+        <a href="http://themepixels.me/demo/dashforge1.1/index.html" class="df-logo">Trade<span>Tracker</span></a>
       </div><!-- navbar-brand -->
       <div id="navbarMenu" class="navbar-menu-wrapper">
         <div class="navbar-menu-header">
           <a href="http://themepixels.me/demo/dashforge1.1/index.html" class="df-logo">dash<span>forge</span></a>
           <a id="mainMenuClose" href="#"><i data-feather="x"></i></a>
         </div><!-- navbar-menu-header -->
-        <?php if($this->params['action'] != 'accounts'){ ?>
+        <?php if(!in_array($this->params['action'],array('login','accounts'))){ ?>
         <ul class="nav navbar-menu">
           <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
           <li class="nav-item">
@@ -96,7 +96,7 @@
           <li class="nav-item">
             <?php echo $this->Html->link('<i data-feather="box"></i> Monthly',array('controller'=>'trades','action'=>'monthlyBalances'),array('class'=>'nav-link','escape'=>false)); ?>
           </li>
-          <li class="nav-item with-sub">
+          <!--<li class="nav-item with-sub">
             <a href="#" class="nav-link"><i data-feather="package"></i> Apps</a>
             <ul class="navbar-menu-sub">
               <li class="nav-sub-item"><a href="app-calendar.html" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a></li>
@@ -135,12 +135,13 @@
                   <li class="nav-sub-item"><a href="page-invoice.html" class="nav-sub-link"><i data-feather="file-text"></i> Invoice</a></li>
                 </ul>
               </div>
-            </div><!-- nav-sub -->
+            </div>
           </li>
-          <li class="nav-item"><a href="http://themepixels.me/demo/dashforge1.1/components/" class="nav-link"><i data-feather="box"></i> Components</a></li>
+          <li class="nav-item"><a href="http://themepixels.me/demo/dashforge1.1/components/" class="nav-link"><i data-feather="box"></i> Components</a></li>!-->
         </ul>
         <?php } ?>
       </div><!-- navbar-menu-wrapper -->
+      <?php if(!in_array($this->params['action'],array('login'))){ ?>
       <div class="navbar-right">
         <a id="navbarSearch" href="#" class="search-link"><i data-feather="search"></i></a>
         <div class="dropdown dropdown-message">
@@ -259,6 +260,7 @@
           </div><!-- dropdown-menu -->
         </div><!-- dropdown -->
       </div><!-- navbar-right -->
+    <?php } ?>
       <div class="navbar-search">
         <div class="navbar-search-header">
           <input type="search" class="form-control" placeholder="Type and hit enter to search...">
@@ -294,16 +296,9 @@
 
     <footer class="footer">
       <div>
-        <span>&copy; 2019 DashForge v1.0.0. </span>
-        <span>Created by <a href="http://themepixels.me/">ThemePixels</a></span>
+        <span>&copy; <?php echo date('Y'); ?> TradeTracker v1.0.0. </span>
       </div>
-      <div>
-        <nav class="nav">
-          <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
-          <a href="http://themepixels.me/demo/dashforge1.1/change-log.html" class="nav-link">Change Log</a>
-          <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
-        </nav>
-      </div>
+      
     </footer>
 
     <?php echo $this->Html->script(array('jquery/jquery.min.js','bootstrap/js/bootstrap.bundle.min.js','feather-icons/feather.min.js','perfect-scrollbar/perfect-scrollbar.min.js','jquery.flot/jquery.flot.js','jquery.flot/jquery.flot.stack.js','jquery.flot/jquery.flot.resize.js','chart.js/Chart.bundle.min.js','jqvmap/jquery.vmap.min.js','jqvmap/jquery.vmap.min.js','jqvmap/maps/jquery.vmap.usa.js')); ?>
